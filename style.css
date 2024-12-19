@@ -603,4 +603,49 @@ footer {
     }
 }
 
+/* Стили для таблиц */
+.discography-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Улучшенная тень */
+    border-radius: 10px; /* Скругленные углы */
+    overflow: hidden; /* Скрываем переполнение */
+    font-size: 1.1rem; /* Увеличенный шрифт */
+    background-color: #fff; /* Белый фон для всей таблицы */
+}
+
+.discography-table th,
+.discography-table td {
+    padding: 15px 20px; /* Увеличенные отступы */
+    text-align: left; /* Выравнивание текста */
+    border-bottom: 1px solid #ddd; /* Границы между строками */
+}
+
+.discography-table th {
+    background-color: #f5f5f5; /* Светло-серый фон заголовков */
+    font-weight: bold;
+    color: #333; /* Тёмный текст */
+    text-transform: uppercase; /* Прописные буквы */
+}
+
+.discography-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Чередование цвета строк */
+}
+
+.discography-table tr:hover {
+    background-color: #e9e9e9; /* Изменение цвета при наведении */
+    transition: background-color 0.3s ease; /* Плавный переход */
+}
+
+@media (max-width: 768px) {
+    .discography-table {
+        font-size: 1rem; /* Меньший шрифт для мобильных устройств */
+    }
+
+    .discography-table th,
+    .discography-table td {
+        padding: 10px; /* Уменьшенные отступы */
+    }
+}
 
